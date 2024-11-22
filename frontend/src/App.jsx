@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='bg-blue-50'>
-      kurcina
+      kurcinaasdasdasd
     </div>
   )
 }
