@@ -1,22 +1,49 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { assets } from '../assets/assets';
 
 const Navbar = () => {
+  // Držimo stanje boje navbar-a
+  const [bgColor, setBgColor] = useState('transparent');
+
+  // Funkcija koja prati scroll poziciju
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setBgColor('bg-neutral-950 ease-in-out transition-all translate-y-2'); // Promeni boju navbar-a kad skroluješ
+    } else {
+      setBgColor('transparent'); // Vratiti početnu boju kad je na vrhu
+    }
+  };
+
+  // Koristimo useEffect za dodavanje event listenera za scroll
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Čistimo event listener kada se komponenta unmount-uje
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-      <div className='absolute bg-neutral-950 w-1/2 top-8 left-1/2 z-50 rounded-l-xl p-2'>
-        <div className='flex justify-center text-white p-4'>
-            <div className='text-xl'> 
-                <Link className="p-4 m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all">Pocetna</Link>
-                <Link className="p-4 m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all">Usluge</Link>
-                <Link className="p-4 m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all">Cenovnik</Link>
-                <Link className="p-4 m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all">Galerija</Link>
-                <Link className="p-4 m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all">Kontakt</Link> 
-            </div>
+    <div className='absolute w-full z-50'>
+      
+      <div className={`${bgColor} flex justify-between w-full fixed p-4 text-white transition-all`}>
+        <div >
+          <Link to={'/'}>
+            <img src={assets.logo} alt='' className=' w-8 h-8' />
+          </Link>
+        </div>
+        <div className='text-2xl'>
+          <Link className='m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all'>Pocetna</Link>
+          <Link className='m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all'>Usluge</Link>
+          <Link className='m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all'>Cenovnik</Link>
+          <Link className='m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all'>Galerija</Link>
+          <Link className='m-4 hover:translate-x-4 hover:text-green-500 ease-in-out transition-all'>Kontakt</Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
