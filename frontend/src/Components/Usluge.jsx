@@ -10,7 +10,12 @@ const Usluge = () => {
   return (
     <div className='pt-20' id='usluge'>
       <div className=''>
-        
+        <div className='my-4'>
+              <h1 className='sbold text-4xl text-center text-green-500'>Odaberite savršenu ponudu kroz,</h1>
+          </div>
+          <div className='my-4'>
+              <h1 className='text-6xl text-center font-bold '>Naše usluge</h1>
+          </div>
         <div className='flex flex-1 self-start justify-center'>
           <div className="border-2 my-4 mr-4 w-[45%] self-start">
             <div className="relative h-64 overflow-hidden bg-white">
@@ -27,7 +32,7 @@ const Usluge = () => {
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  showSelektiranje ? 'max-h-[300px]' : 'max-h-0'
+                  showSelektiranje ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
                 <div className="text-justify p-4">
@@ -80,7 +85,7 @@ const Usluge = () => {
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  showHemija ? 'max-h-[300px]' : 'max-h-0'
+                  showHemija ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
                 <div className="text-justify p-4">
@@ -97,6 +102,9 @@ const Usluge = () => {
                   </ul>
                   <p className="italic font-light text-sm">
                   Ovaj paket je idealan za korisnike koji traže dodatnu zaštitu svojih žitarica kroz napredne metode obrade, uz zadržavanje visokih standarda kvaliteta i sigurnosti.
+                  </p>
+                  <p className="italic font-light text-sm">
+                  Napomena: Uz ovaj paket dolaze svi atributi od prethodnog.
                   </p>
                 </div>
               </div>
@@ -134,24 +142,25 @@ const Usluge = () => {
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  showHemijaPrem ? 'max-h-[300px]' : 'max-h-0'
+                  showHemijaPrem ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
                 <div className="text-justify p-4">
                   <p className="text-base pt-2">
-                    Osnovni paket selektiranja žitarica obuhvata mehaničko uklanjanje nečistoća bez upotrebe hemijskih
-                    sredstava. Ovaj paket je osmišljen za osnovnu obradu i uključuje:
+                  Paket dodatnog zaprašivanja hemijom pruža mogućnost tretiranja žitarica specijalizovanim hemijskim sredstvima radi dugotrajnije zaštite i očuvanja kvaliteta. Ovaj paket je osmišljen kao dopunska usluga za korisnike koji žele dodatni sloj sigurnosti i uključuje:
                   </p>
                   <ul className="m-4 list-disc list-inside">
                     <li className="font-semibold">
-                      Odvajanje krupnih nečistoća poput kamenčića, ostataka slame i drugih neželjenih materija.
+                    Primenu specijalizovanih hemijskih sredstava za zaštitu od štetnih insekata i mikroorganizama.
                     </li>
-                    <li className="font-semibold">Prečišćavanje prašine i sitnih čestica sa površine žitarica.</li>
-                    <li className="font-semibold">Vizuelnu kontrolu kvaliteta žitarica nakon selektiranja.</li>
+                    <li className="font-semibold">Preventivnu obradu koja smanjuje rizik od kvarenja tokom skladištenja.</li>
+                    <li className="font-semibold">Poboljšanje kvaliteta skladištenja, uz očuvanje nutritivnih svojstava žitarica.</li>
                   </ul>
                   <p className="italic font-light text-sm">
-                    Ovaj paket je idealan za korisnike koji traže osnovnu pripremu žitarica uz očuvanje njihove prirodnosti
-                    i kvaliteta.
+                  Ovaj paket je idealan za korisnike koji traže rešenja za produženje trajnosti svojih žitarica i osiguranje dodatne zaštite tokom čuvanja i transporta.
+                  </p>
+                  <p className="italic font-light text-sm">
+                  Napomena: Uz ovaj paket dolaze svi atributi od prethodna dva.
                   </p>
                 </div>
               </div>
@@ -187,24 +196,22 @@ const Usluge = () => {
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  showCustom ? 'max-h-[300px]' : 'max-h-0'
+                  showCustom ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
                 <div className="text-justify p-4">
                   <p className="text-base pt-2">
-                    Osnovni paket selektiranja žitarica obuhvata mehaničko uklanjanje nečistoća bez upotrebe hemijskih
-                    sredstava. Ovaj paket je osmišljen za osnovnu obradu i uključuje:
+                  Paket zaprašivanja po vašoj želji pruža potpunu fleksibilnost u tretiranju žitarica prema specifičnim potrebama korisnika. Ovaj paket omogućava personalizovani pristup zaštiti i obradi žitarica i uključuje:
                   </p>
                   <ul className="m-4 list-disc list-inside">
                     <li className="font-semibold">
-                      Odvajanje krupnih nečistoća poput kamenčića, ostataka slame i drugih neželjenih materija.
+                    Odabir hemijskih sredstava prema vašim potrebama i preferencijama.
                     </li>
-                    <li className="font-semibold">Prečišćavanje prašine i sitnih čestica sa površine žitarica.</li>
-                    <li className="font-semibold">Vizuelnu kontrolu kvaliteta žitarica nakon selektiranja.</li>
+                    <li className="font-semibold">Prilagođavanje doze i načina tretiranja, u skladu sa zahtevima korisnika.</li>
+                    <li className="font-semibold">Fokus na specifične vrste štetočina ili mikroorganizama koji ugrožavaju vaše žitarice.</li>
                   </ul>
                   <p className="italic font-light text-sm">
-                    Ovaj paket je idealan za korisnike koji traže osnovnu pripremu žitarica uz očuvanje njihove prirodnosti
-                    i kvaliteta.
+                  Ovaj paket je idealan za korisnike koji žele personalizovan pristup obradi žitarica, uz garantovanu sigurnost i efikasnost tretmana.
                   </p>
                 </div>
               </div>
@@ -222,7 +229,7 @@ const Usluge = () => {
                   />
                 </button>
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       </div>
