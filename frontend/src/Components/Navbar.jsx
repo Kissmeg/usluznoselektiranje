@@ -62,23 +62,23 @@ const Navbar = () => {
   return (
     <div className='absolute w-full z-50'>
       <div className='absolute z-50 '>
-        <div onClick={scrollTop} className={`${scrollToTop} bottom-12 animation-up right-8 p-2 bg-green-500 rounded-full`}> <img src={assets.arrow_up_dark} className='w-8' alt="" /> </div>
+        <div onClick={scrollTop} className={`${scrollToTop} bottom-12 animation-up right-8 p-2 bg-green-500 rounded-full cursor-pointer`}> <img src={assets.arrow_up_dark} className='w-8' alt="" /> </div>
       </div>
       <div className={`${bgColor} flex justify-between w-full fixed p-4 text-white transition-all`}>
         <div className=' p-4'>
           <Link to={'/'}>
-            <img src={assets.logo} alt='' className='w-8 h-8 scale-150 hover:scale-[1.6] ease-in-out transition-all ' />
+            <img onClick={() => handleScrollLink('pocetna')} src={assets.logo} alt='' className='w-8 h-8 scale-150 hover:scale-[1.6] ease-in-out transition-all ' />
           </Link>
         </div>
         <div className='text-2xl flex'>
-          <div className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
+          <div onClick={() => handleScrollLink('pocetna')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
             <Link className=''><p className='text-4xl'>Pocetna</p></Link>
+          </div>
+          <div onClick={() => handleScrollLink('onama')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
+            <Link className=''><p className='text-4xl'>O nama</p></Link>
           </div>
           <div onClick={() => handleScrollLink('usluge')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
             <Link className=''><p className='text-4xl'>Usluge</p></Link>
-          </div>
-          <div onClick={() => handleScrollLink('cenovnik')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-            <Link className=''><p className='text-4xl'>Cenovnik</p></Link>
           </div>
           <div onClick={() => handleScrollLink('galerija')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
             <Link className=''><p className='text-4xl'>Galerija</p></Link>
