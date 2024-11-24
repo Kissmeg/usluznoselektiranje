@@ -28,7 +28,7 @@ const Usluge = () => {
             <div>
               <div className="flex justify-between items-center p-4">
                 <h1 className="header text-4xl">Selektiranje žitarica</h1>
-                <h2 className="text-4xl font-bold header">3din/kg</h2>
+                <h2 className="text-4xl font-bold header">3 din/kg</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -138,7 +138,7 @@ const Usluge = () => {
             <div>
               <div className="flex justify-between items-center p-4">
                 <h1 className="header text-4xl">Dodatno zaprasivanje hemijom</h1>
-                <h2 className="text-4xl font-bold header">3,5 din/kg</h2>
+                <h2 className="text-4xl font-bold header">6 din/kg</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
