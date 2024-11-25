@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
+import { Context } from '../Context/JSContext';
 {/*Odaberite savršenu ponudu za vaše žitarice za bolji prinos! */}
 const Usluge = () => {
   const [showSelektiranje, setShowSelektiranje] = useState(false);
   const [showHemija, setShowHemija] = useState();
   const [showHemijaPrem, setShowHemijaPrem] = useState();
   const [showCustom, setShowCustom] = useState();
-  
+  const {handleScrollLink} = useContext(Context);
   return (
     <div className='pt-20' id='usluge'>
       <div className=''>
@@ -16,17 +17,19 @@ const Usluge = () => {
           <div className='my-4'>
               <h1 className='text-6xl text-center font-bold '>Naše usluge</h1>
           </div>
-        <div className='flex flex-1 self-start justify-center'>
-          <div className="border-2 my-4 mr-4 w-[45%] self-start">
+        <div className='lg:flex flex-1 p-4 self-start justify-center'>
+          <div className="border-2 my-4 lg:mr-4 lg:w-[45%] self-start rounded-lg shadow-lg border-black">
             <div className="relative h-64 overflow-hidden bg-white">
               <img
+                onClick={() => setShowSelektiranje(!showSelektiranje)}
                 src={assets.selektor}
                 alt="Selektiranje žitarica"
-                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125"
+                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125 cursor-pointer"
               />
             </div>
+
             <div>
-              <div className="flex justify-between items-center p-4">
+              <div className="lg:flex justify-between items-center p-4">
                 <h1 className="header text-4xl">Selektiranje žitarica</h1>
                 <h2 className="text-4xl font-bold header">3 din/kg</h2>
               </div>
@@ -67,19 +70,26 @@ const Usluge = () => {
                   />
                 </button>
               </div>
+              <div className='flex justify-center'>
+                <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
+                    Zakazite termin
+                </button>
+              </div>
             </div>
           </div>
           
-          <div className="border-2 my-4 mr-4 w-[45%] self-start">
+          <div className="border-2 my-4 lg:w-[45%] self-start rounded-lg shadow-lg border-black">
             <div className="relative h-64 overflow-hidden bg-white">
               <img
+                onClick={() => setShowHemija(!showHemija)}
                 src={assets.hemija}
                 alt="Selektiranje žitarica"
-                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125"
+                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125 cursor-pointer"
               />
             </div>
+
             <div>
-              <div className="flex justify-between items-center p-4">
+              <div className="lg:flex justify-between items-center p-4">
                 <h1 className="header text-4xl">Selektiranje žitarica sa hemijom</h1>
                 <h2 className="text-4xl font-bold header">3,5 din/kg</h2>
               </div>
@@ -122,17 +132,23 @@ const Usluge = () => {
                   />
                 </button>
               </div>
+              <div className='flex justify-center'>
+                <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
+                    Zakazite termin
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className='flex justify-center'>
-        <div className="border-2 my-4 mr-4 w-[45%] self-start">
+        <div className='lg:flex p-4 justify-center gap-4'>
+        <div className="border-2 my-4 lg:w-[45%] self-start rounded-lg shadow-lg border-black">
             <div className="relative h-64 overflow-hidden bg-white">
               <img
+                onClick={() => setShowHemijaPrem(!showHemijaPrem)}
                 src={assets.hemijaPrem}
                 alt="Selektiranje žitarica"
-                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125"
+                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125 cursor-pointer"
               />
             </div>
             <div>
@@ -178,15 +194,21 @@ const Usluge = () => {
                   />
                 </button>
               </div>
+              <div className='flex justify-center'>
+                <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
+                    Zakazite termin
+                </button>
+              </div>
             </div>
           </div>
           
-          <div className="border-2 my-4 mr-4 w-[45%] self-start">
+          <div className="border-2 my-4 lg:w-[45%] self-start rounded-lg shadow-lg border-black">
             <div className="relative h-64 overflow-hidden bg-white">
               <img
+                onClick={() => setShowCustom(!showCustom)}
                 src={assets.deal}
                 alt="Selektiranje žitarica"
-                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125"
+                className="mix-blend-luminosity hover:mix-blend-normal w-full h-full object-cover scale-110 transition-transform duration-300 ease-in-out hover:scale-125 cursor-pointer"
               />
             </div>
             <div>
@@ -227,6 +249,11 @@ const Usluge = () => {
                       showCustom ? 'rotate-45' : ''
                     }`}
                   />
+                </button>
+              </div>
+              <div className='flex justify-center'>
+                <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
+                    Zakazite termin
                 </button>
               </div>
             </div>  

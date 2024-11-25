@@ -26,8 +26,19 @@ import plus from './plus.png'
 import deal from './deal.jpg'
 import hemijaPrem from './hemijaPrem.jpg'
 
+import phone from './phone.png'
+import email from './email.png'
+import location from './location.png'
+
+import meni from './meni.png'
+import cross from './cross.png'
 export const assets = {
     hemija,
+    cross,
+    meni,
+    location,
+    email,
+    phone,
     hemijaPrem,
     deal,
     plus,
