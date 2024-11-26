@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link className=''><p className='text-4xl'>Kontakt</p></Link>
           </div>
           <div onClick={() => handleScrollLink('galerija')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-            <Link className=''><p className='text-4xl'>Galerija</p></Link>
+            <Link to={'/galerija'} className=''><p className='text-4xl'>Galerija</p></Link>
           </div>
         </div>
         <div className='p-4 lg:hidden'>
@@ -55,8 +55,8 @@ const Navbar = () => {
                   <div onClick={() => {handleScrollLink('zakazivanje'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
                     <Link className=''><p className='text-4xl'>Kontakt</p></Link>
                   </div>
-                  <div onClick={() => {handleScrollLink('pocetna'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-                    <Link className=''><p className='text-4xl'>Galerija</p></Link>
+                  <div onClick={() => {handleScrollLink('galerija'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
+                    <Link to={'/galerija'} className=''><p className='text-4xl'>Galerija</p></Link>
                   </div>
                 </div>
                 <div className='p-4'>

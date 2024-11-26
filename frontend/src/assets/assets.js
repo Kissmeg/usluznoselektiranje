@@ -58,3 +58,47 @@ export const assets = {
     wheat_bag,
     chem,
 }
+import selektiranje1 from './selektiranje1.jpg'
+import selektiranje2 from './selektiranje2.jpg'
+import selektiranje3 from './selektiranje3.jpg'
+import selektiranje4 from './selektiranje4.jpg'
+import selektiranje5 from './selektiranje5.jpg'
+import selektiranje6 from './selektiranje6.jpg'
+import selektiranje7 from './selektiranje7.jpg'
+import selektiranje8 from './selektiranje8.jpg'
+
+export const gallery = [
+    {
+        id:"0",
+        image:[selektiranje1],
+    },
+    {
+        id:"1",
+        image:[selektiranje2],
+    },
+    {
+        id:"2",
+        image:[selektiranje3],
+    },
+    {
+        id:"3",
+        image:[selektiranje4],
+    },
+    {
+        id:"4",
+        image:[selektiranje5],
+    },
+    {
+        id:"5",
+        image:[selektiranje6],
+    },
+    {
+        id:"6",
+        image:[selektiranje7],
+    },
+    {
+        id:"7",
+        image:[selektiranje8],
+    },
+    
+]
