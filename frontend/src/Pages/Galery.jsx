@@ -40,7 +40,7 @@ const Galery = () => {
         <div className='flex justify-center'>
         {gallery.length > 0 &&(
             <div className='pt-20 w-2/4'>
-                <div className='grid grid-cols-4 grid-rows-2 gap-12'>
+                <div className='grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-12'>
                 {gallery.map((images, index)=>(
                     <div key={index} className='flex justify-center'>
                         <img src={images.image}
