@@ -28,9 +28,7 @@ const Galery = () => {
       };
   return (
     <div id='galerija'>
-        <div className='absolute p-12 bg-neutral-950 w-full'>
-
-        </div>
+        
         {openImage &&(
             <div className='absolute'>
                 <img src={gallery.index} alt="" />

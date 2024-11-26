@@ -11,12 +11,8 @@ export const JSContext = ({ children }) => {
     if (location.pathname !== '/') {
       // Ako nismo na glavnoj stranici, navigiraj na početnu stranicu
       navigate('/');
-      if(location.pathname !=='/galerija'){
-        const element = document.getElementById(target);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
+      
+      
       // Kada se navigacija izvrši, postavi mali timeout za skrolovanje
       setTimeout(() => {
         const element = document.getElementById(target);
@@ -36,15 +32,19 @@ export const JSContext = ({ children }) => {
 
   // Funkcija koja prati scroll poziciju
   const handleScroll = () => {
-    
-    if (window.scrollY > 0) {
-      setBgColor('bg-neutral-950 ease-in-out transition-all transition-y-2 '); // Promeni boju navbar-a kad skroluješ
-      setScrollToTop(' ease-in-out transition-all transition-y-2 text-white fixed'); // Promeni boju navbar-a kad skroluješ
-    } else {
-      setBgColor('transparent'); // Vratiti početnu boju kad je na vrhu
-      setScrollToTop('hidden ease-in-out transition-all'); // Vratiti početnu boju kad je na vrhu
-    }
-  };
+        if (location.pathname === '/') {
+          if (window.scrollY > 0) {
+            setBgColor('bg-neutral-950 ease-in-out transition-all transition-y-2 ');        // Promeni boju navbar-a kad skroluješ
+            setScrollToTop(' ease-in-out transition-all transition-y-2 text-white fixed');  // Promeni boju navbar-a kad skroluješ
+          } else {
+            setBgColor('transparent'); // Vratiti početnu boju kad je na vrhu
+            setScrollToTop('hidden ease-in-out transition-all'); // Vratiti početnu boju kad je na vrhu
+          }
+        }else{
+          setBgColor('bg-neutral-950')
+        }
+      }
+
   const [scrollToTop, setScrollToTop] = useState('hidden');
   
   const scrollTop = () => {
@@ -56,13 +56,14 @@ export const JSContext = ({ children }) => {
 };
   // Koristimo useEffect za dodavanje event listenera za scroll
   useEffect(() => {
+    handleScroll()
     window.addEventListener('scroll', handleScroll);
 
     // Čistimo event listener kada se komponenta unmount-uje
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
   return (
     <Context.Provider value={{ handleScrollLink, handleScroll, scrollToTop, scrollTop, bgColor
        }}>
