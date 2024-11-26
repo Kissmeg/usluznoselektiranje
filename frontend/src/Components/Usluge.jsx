@@ -29,9 +29,9 @@ const Usluge = () => {
             </div>
 
             <div>
-              <div className="lg:flex justify-between items-center p-4">
-                <h1 className="header text-4xl">Selektiranje žitarica</h1>
-                <h2 className="text-4xl font-bold header">3 din/kg</h2>
+              <div className="flex justify-between items-center p-4">
+                <h1 className="header text-2xl lg:text-4xl">Selektiranje žitarica</h1>
+                <h2 className="text-2xl lg:text-4xl font-bold header">3 din/kg</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -72,7 +72,7 @@ const Usluge = () => {
               </div>
               <div className='flex justify-center'>
                 <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
-                    Zakazite termin
+                    Zakažite termin
                 </button>
               </div>
             </div>
@@ -89,9 +89,9 @@ const Usluge = () => {
             </div>
 
             <div>
-              <div className="lg:flex justify-between items-center p-4">
-                <h1 className="header text-4xl">Selektiranje žitarica sa hemijom</h1>
-                <h2 className="text-4xl font-bold header">3,5 din/kg</h2>
+              <div className= "flex justify-between items-center p-4">
+                <h1 className="header text-2xl lg:text-4xl">Selektiranje žitarica sa hemijom</h1>
+                <h2 className="text-2xl lg:text-4xl font-bold header">3,5 din/kg</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -134,7 +134,7 @@ const Usluge = () => {
               </div>
               <div className='flex justify-center'>
                 <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
-                    Zakazite termin
+                   Zakažite termin
                 </button>
               </div>
             </div>
@@ -153,8 +153,8 @@ const Usluge = () => {
             </div>
             <div>
               <div className="flex justify-between items-center p-4">
-                <h1 className="header text-4xl">Dodatno zaprasivanje hemijom</h1>
-                <h2 className="text-4xl font-bold header">6 din/kg</h2>
+                <h1 className="header text-2xl lg:text-4xl">Dodatno zaprašivanje hemijom</h1>
+                <h2 className="text-2xl lg:text-4xl font-bold header">6 din/kg</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -196,7 +196,7 @@ const Usluge = () => {
               </div>
               <div className='flex justify-center'>
                 <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
-                    Zakazite termin
+                    Zakažite termin
                 </button>
               </div>
             </div>
@@ -213,8 +213,8 @@ const Usluge = () => {
             </div>
             <div>
               <div className="flex justify-between items-center p-4">
-                <h1 className="header text-4xl">Zaprasivanje po vasoj zelji</h1>
-                <h2 className="text-4xl font-bold header">Po dogovoru</h2>
+                <h1 className="header text-2xl lg:text-4xl">Zaprašivanje po vašoj zelji</h1>
+                <h2 className="text-2xl lg:text-4xl font-bold header">Po dogovoru</h2>
               </div>
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
@@ -253,7 +253,7 @@ const Usluge = () => {
               </div>
               <div className='flex justify-center'>
                 <button onClick={()=> handleScrollLink('zakazivanje')} className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
-                    Zakazite termin
+                    Zakažite termin
                 </button>
               </div>
             </div>  

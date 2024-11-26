@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../Context/JSContext'
 
 const Kontakt = () => {
   return (
@@ -32,7 +33,7 @@ const Kontakt = () => {
                 </div>
                <div className='flex justify-center'>
                 <button className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
-                    Posalji
+                    Pošalji
                 </button>
                </div>
                 <div className='flex justify-center'>

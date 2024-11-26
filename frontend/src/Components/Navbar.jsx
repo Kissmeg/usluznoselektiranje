@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         <div className='text-2xl lg:flex hidden'>
           <div onClick={() => handleScrollLink('pocetna')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-            <Link className=''><p className='text-4xl'>Pocetna</p></Link>
+            <Link className=''><p className='text-4xl'>Početna</p></Link>
           </div>
           <div onClick={() => handleScrollLink('onama')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
             <Link className=''><p className='text-4xl'>O nama</p></Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
               <div className='flex justify-between'>
                 <div className='p-4'>
                   <div onClick={() => {handleScrollLink('pocetna'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-                    <Link className=''><p className='text-4xl'>Pocetna</p></Link>
+                    <Link className=''><p className='text-4xl'>Početna</p></Link>
                   </div>
                   <div onClick={() => {handleScrollLink('onama'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
                     <Link className=''><p className='text-4xl'>O nama</p></Link>
