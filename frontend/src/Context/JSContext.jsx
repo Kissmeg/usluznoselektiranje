@@ -11,6 +11,12 @@ export const JSContext = ({ children }) => {
     if (location.pathname !== '/') {
       // Ako nismo na glavnoj stranici, navigiraj na početnu stranicu
       navigate('/');
+      if(location.pathname !=='/galerija'){
+        const element = document.getElementById(target);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
       // Kada se navigacija izvrši, postavi mali timeout za skrolovanje
       setTimeout(() => {
         const element = document.getElementById(target);

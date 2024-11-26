@@ -38,12 +38,12 @@ const Kontakt = () => {
                 <div className='flex justify-center'>
                     <h1 className='header text-2xl'>Naši kontakti</h1>
                 </div>
-                <div className='text-center lg:flex justify-between'>
-                    <div className='my-4'>
+                <div className='text-center lg:flex justify-between gap-4'>
+                    <div className='my-4 shadow-2xl p-4 rounded-lg'>
                         <h1 className='lg:text-base'>Email</h1>
                         <p>kontrash297@gmail.com</p>
                     </div>
-                    <div className='my-4'>
+                    <div className='my-4 shadow-2xl p-4 rounded-lg'>
                         <h1 className='text-center'>Telefon</h1>
                         <p>David +381 060 5857 087</p>
                         <p>Robert +381 063 7783 452</p>
