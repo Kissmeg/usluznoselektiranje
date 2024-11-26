@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { assets } from '../assets/assets';
 import { Context } from '../Context/JSContext';
 
@@ -33,9 +33,11 @@ const Navbar = () => {
           <div onClick={() => handleScrollLink('zakazivanje')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
             <Link className=''><p className='text-4xl'>Kontakt</p></Link>
           </div>
+          <NavLink to={'/galerija'} className=''>
           <div onClick={() => handleScrollLink('galerija')} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
-            <Link to={'/galerija'} className=''><p className='text-4xl'>Galerija</p></Link>
+            <p className='text-4xl'>Galerija</p>
           </div>
+          </NavLink>
         </div>
         <div className='p-4 lg:hidden'>
           <img onClick={()=> setMobileMenu(!mobileMenu)} src={assets.meni} className='w-8 h-8' alt="" />
