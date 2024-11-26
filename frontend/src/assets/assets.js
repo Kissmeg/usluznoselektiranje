@@ -1,4 +1,4 @@
-import hero from './hero.jpg'
+import hero from './hero.webp'
 import logo from './logo.png'
 import arrow_up_dark from './arrow_up_dark.png'
 
@@ -18,13 +18,13 @@ import fertilizer from './fertilizer.png'
 import chem from './chem.png'
 import wheat_bag from './wheat_bag.png'
 
-import hemija from './hemija.jpg'
-import selektor from './selektor.jpg'
+import hemija from './hemija.webp'
+import selektor from './selektor.webp'
 
 import plus from './plus.png'
 
-import deal from './deal.jpg'
-import hemijaPrem from './hemijaPrem.jpg'
+import deal from './deal.webp'
+import hemijaPrem from './hemijaPrem.webp'
 
 import phone from './phone.png'
 import email from './email.png'
@@ -58,14 +58,14 @@ export const assets = {
     wheat_bag,
     chem,
 }
-import selektiranje1 from './selektiranje1.jpg'
-import selektiranje2 from './selektiranje2.jpg'
-import selektiranje3 from './selektiranje3.jpg'
-import selektiranje4 from './selektiranje4.jpg'
-import selektiranje5 from './selektiranje5.jpg'
-import selektiranje6 from './selektiranje6.jpg'
-import selektiranje7 from './selektiranje7.jpg'
-import selektiranje8 from './selektiranje8.jpg'
+import selektiranje1 from './selektiranje1.webp'
+import selektiranje2 from './selektiranje2.webp'
+import selektiranje3 from './selektiranje3.webp'
+import selektiranje4 from './selektiranje4.webp'
+import selektiranje5 from './selektiranje5.webp'
+import selektiranje6 from './selektiranje6.webp'
+import selektiranje7 from './selektiranje7.webp'
+import selektiranje8 from './selektiranje8.webp'
 
 export const gallery = [
     {

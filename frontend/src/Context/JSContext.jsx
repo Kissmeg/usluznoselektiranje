@@ -30,6 +30,7 @@ export const JSContext = ({ children }) => {
 
   // Funkcija koja prati scroll poziciju
   const handleScroll = () => {
+    
     if (window.scrollY > 0) {
       setBgColor('bg-neutral-950 ease-in-out transition-all transition-y-2 '); // Promeni boju navbar-a kad skroluješ
       setScrollToTop(' ease-in-out transition-all transition-y-2 text-white fixed'); // Promeni boju navbar-a kad skroluješ

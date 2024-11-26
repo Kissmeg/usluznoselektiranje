@@ -12,7 +12,6 @@ const Home = () => {
       <Onama />
       <Usluge />
       <Kontakt />
-      <Footer />
     </div>
   )
 }
