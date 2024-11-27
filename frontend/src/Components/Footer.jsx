@@ -10,7 +10,9 @@ const Footer = () => {
       <div className='lg:flex justify-around p-4 mx-20'>
         <div className='flex justify-center'>
           <Link to={'/'}>
-            <img onClick={() => handleScrollLink('pocetna')} src={assets.logo} alt='' className='w-1/3 scale-150 hover:scale-[1.6] ease-in-out transition-all ' />
+            <div className='flex justify-center my-4'>
+              <img onClick={() => handleScrollLink('pocetna')} src={assets.logo} alt='' className='w-1/3 scale-150 hover:scale-[1.6] ease-in-out transition-all ' />
+            </div>
           </Link>
         </div>
         

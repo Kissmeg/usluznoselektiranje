@@ -1,4 +1,4 @@
-import hero from './hero.webp'
+import hero from './hero.jpg'
 import logo from './logo.png'
 import arrow_up_dark from './arrow_up_dark.png'
 
@@ -58,14 +58,14 @@ export const assets = {
     wheat_bag,
     chem,
 }
-import selektiranje1 from './selektiranje1.webp'
-import selektiranje2 from './selektiranje2.webp'
-import selektiranje3 from './selektiranje3.webp'
-import selektiranje4 from './selektiranje4.webp'
-import selektiranje5 from './selektiranje5.webp'
-import selektiranje6 from './selektiranje6.webp'
-import selektiranje7 from './selektiranje7.webp'
-import selektiranje8 from './selektiranje8.webp'
+import selektiranje1 from './selektiranje1.jpg'
+import selektiranje2 from './selektiranje2.jpg'
+import selektiranje3 from './selektiranje3.jpg'
+import selektiranje4 from './selektiranje4.jpg'
+import selektiranje5 from './selektiranje5.jpg'
+import selektiranje6 from './selektiranje6.jpg'
+import selektiranje7 from './selektiranje7.jpg'
+import selektiranje8 from './selektiranje8.jpg'
 
 export const gallery = [
     {
