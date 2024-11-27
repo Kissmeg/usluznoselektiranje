@@ -19,7 +19,7 @@ const Onama = () => {
         </div>
 
         <div className='lg:w-[25%] shadow-2xl p-4 rounded-lg m-4'>
-            <h1 className='text-2xl font-bold text-center p-4 header'>Usluzno selektiranje</h1>
+            <h1 className='text-2xl font-bold text-center p-4 header'>Uslužno selektiranje</h1>
             
             <p className='text-justify p-4 font-medium m-4 text-lg rounded-lg shadow-inner'>Naša porodica se od 2017. godine posvećeno bavi selektiranjem žitarica, oslanjajući se na iskustvo i pažnju prema svakom detalju. Biramo samo najbolje kako bismo osigurali kvalitet i zadovoljstvo naših kupaca. Kroz godine rada, razvili smo duboko razumevanje potreba tržišta i značaj održivog pristupa. Naša posvećenost svakom zrnu i svakom kupcu garantuje vrhunski kvalitet proizvoda koji dolaze iz naše firme. Verujemo da strast i trud čine razliku, a naš cilj je da postanemo vaš pouzdan partner u odabiru i distribuciji najkvalitetnijih žitarica.</p>
             

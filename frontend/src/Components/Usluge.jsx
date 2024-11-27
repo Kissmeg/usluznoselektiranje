@@ -213,7 +213,7 @@ const Usluge = () => {
             </div>
             <div>
               <div className="flex justify-between items-center p-4">
-                <h1 className="header text-2xl lg:text-4xl">Zaprašivanje po vašoj zelji</h1>
+                <h1 className="header text-2xl lg:text-4xl">Zaprašivanje po vašoj želji</h1>
                 <h2 className="text-2xl lg:text-4xl font-bold header">Po dogovoru</h2>
               </div>
               <div
