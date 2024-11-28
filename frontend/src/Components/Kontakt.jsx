@@ -18,21 +18,17 @@ const Kontakt = () => {
                     <div>
                         <input type="hidden" name="access_key" value={'8a939d91-ebe8-44ca-a856-f6003e6e9602'}/>
                         <p className='mb-2 text-2xl header text-left'>Ime</p>
-                        <input type="text" name='name' id=''  className='w-full border-b-2 border-black '/>
+                        <input type="text" name='name' id='' required  className='w-full border-b-2 border-black '/>
                         
                     </div>
-                    <div>
-                        <p className='mb-2 text-2xl header text-left'>Br. telefona</p>
-                        <input type="tel" name='telephone' id=''  className='w-full border-b-2 border-black'/>
+                    <div className='w-full'>
+                        <p className='mb-2 text-2xl header text-left '>Br. telefona</p>
+                        <input type="tel" name='telephone' required id=''  className='w-full border-b-2 border-black'/>
                     </div>
-                </div>
-                <div>
-                    <p className='mt-4 mb-2 text-2xl header'>Email</p>
-                    <input type="email" name='email' id=''  className='border-b-2 w-full border-black'/>
                 </div>
                 <div>
                     <p className='mt-4 mb-2 text-2xl header'>Poruka</p>
-                    <input type="text" name='message' id=''  className='border-b-2  w-full border-black'/>
+                    <input type="text" name='message' id='' required  className='border-b-2  w-full border-black'/>
                 </div>
                <div className='flex justify-center'>
                 <button className=' text-2xl m-4 border-black border-2 p-2 hover:bg-green-500 hover:scale-105 rounded-lg hover:border-white transition-all ease-in-out'>
@@ -45,7 +41,7 @@ const Kontakt = () => {
                 <div className='text-center lg:flex justify-between gap-4'>
                     <div className='my-4 shadow-2xl p-4 rounded-lg'>
                         <h1 className='lg:text-base'>Email</h1>
-                        <p>kontrash297@gmail.com</p>
+                        <p>usluznoselektiranje@gmail.com</p>
                     </div>
                     <div className='my-4 shadow-2xl p-4 rounded-lg'>
                         <h1 className='text-center'>Telefon</h1>

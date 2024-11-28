@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div className='flex'>
                 <img src={assets.email} alt=""     className='w-8 h-8 my-4' />
-                <p className='text-xs lg:text-base text-white m-4'>kontrash297@gmail.com</p>
+                <p className='text-xs lg:text-base text-white m-4'>usluznoselektiranje@gmail.com</p>
             </div>
             <div className='flex'>
                 <img src={assets.location} alt= "" className='lg:w-8 h-8 my-4' />
