@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <div className='absolute w-full z-50'>
       <div className='absolute z-40 '>
-        <div onClick={scrollTop} className={`${scrollToTop} bottom-12 animation-up right-8 p-2 bg-green-500 rounded-full cursor-pointer`}> <img src={assets.arrow_up_dark} className='w-8' alt="" /> </div>
+        
+        <div onClick={scrollTop} className={mobileMenu ? `hidden` : `${scrollToTop} bottom-12 animation-up right-8 p-2 bg-green-500 rounded-full cursor-pointer`}> 
+          <img src={assets.arrow_up_dark} className='w-8' alt="" /> 
+        </div>
+      
       </div>
       <div className={`${bgColor} flex justify-between w-full fixed p-4 text-white transition-all`}>
         <div className=' p-4'>
