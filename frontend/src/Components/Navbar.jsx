@@ -43,9 +43,6 @@ const Navbar = () => {
           <img onClick={()=> setMobileMenu(!mobileMenu)} src={assets.meni} className='w-8 h-8' alt="" />
           {mobileMenu &&(
           <div className='absolute z-50 bg-neutral-950 w-full left-0 top-0 h-screen'>
-              <div className='z-0 absolute bottom-1/2 opacity-20'>
-                <img src={assets.logo} alt="" />
-              </div>
               <div className='flex justify-between'>
                 <div className='p-4'>
                   <div onClick={() => {handleScrollLink('pocetna'),setMobileMenu(false)}} className='p-2 hover:translate-x-2 hover:text-green-500 ease-in-out transition-all scale-50'>
@@ -67,6 +64,9 @@ const Navbar = () => {
                 <div className='p-4'>
                   <img onClick={()=> setMobileMenu(false)} className='w-8 h-8 m-4' src={assets.cross} alt="" />
                 </div>
+              </div>
+              <div className='border-2 z-0 absolute top-[8%] opacity-20'>
+                <img src={assets.logo} alt="" />
               </div>
           </div>
         )}
