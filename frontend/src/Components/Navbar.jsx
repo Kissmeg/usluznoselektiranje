@@ -65,7 +65,7 @@ const Navbar = () => {
                   <img onClick={()=> setMobileMenu(false)} className='w-8 h-8 m-4' src={assets.cross} alt="" />
                 </div>
               </div>
-              <div className='border-2 z-0 absolute top-[8%] opacity-20'>
+              <div className='z-0 absolute top-[8%] opacity-20'>
                 <img src={assets.logo} alt="" />
               </div>
           </div>
