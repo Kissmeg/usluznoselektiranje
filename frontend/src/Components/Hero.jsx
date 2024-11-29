@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='' id='pocetna'>
       <div className=''>
-        <div className='absolute z-50 top-[30%] left-1/2 lg:top-1/2 lg:left-1/2 -translate-x-1/2'>
+        <div className='absolute z-40 top-[30%] left-1/2 lg:top-1/2 lg:left-1/2 -translate-x-1/2'>
           <button onClick={()=> handleScrollLink('usluge')} className='font-light lg:text-6xl text-white border-2 p-2 lg:p-4 rounded-xl border-white  hover:border-transparent hover:bg-green-500 transition-all ease-in-out hover:scale-105'>Ponude</button>
         </div>
       </div>
